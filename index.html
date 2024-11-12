@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/output.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="assets/OIP (2).jpg" type="image/x-icon">
+    <title>Dev-pizza</title>
+</head>
+
+<body>
+
+    <header class="w-full h-[420px] bg-slate-950 bg-home bg-cover bg-center">
+
+        <div class="w-full h-full flex flex-col justify-center items-center">
+
+            <img src="assets/OIP (2).jpg" alt="logopizza"
+                class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200">
+            <h1 class="text-3xl mt-3 mb-4 font-bold text-white">Dev-pizza</h1>
+            <span class="text-white font-medium">Rua###########</span>
+
+            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="text-white">Seg á Dom - 18H ás 22H </span>
+            </div>
+        </div>
+    </header>
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+        Conheça Nosso Menu 🤤
+    </h2>
+
+    <div id="menu">
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+
+            <div class="flex gap-2 ">
+                <img src="assets/OIP.jpg" alt="" class="w-28 h-28 rounded-md hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Portuguesa</p>
+                    <p class="text-sm">
+                        presunto, mussarela, tomate, pimentão, milho e ovos.
+                    </p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 18.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Artesanal(1)"
+                            data-price="18.90">
+
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="flex gap-2 ">
+                <img src="assets/OIP (5).jpg" alt="Artesanal(2)"
+                    class="w-28 h-28 rounded-md hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Calabresa</p>
+                    <p class="text-sm">calabresa, azeitona, orégano cebola e queijo. </p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 32.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="(2)" data-price="32.90">
+
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex gap-2 ">
+                <img src="assets/OIP (3).jpg" alt="(3)" class="w-28 h-28 rounded-md hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">4 queijos</p>
+                    <p class="text-sm">queijo, orégano e tomate.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 42.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Artesanal(3)"
+                            data-price="42.90">
+
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex gap-2 ">
+                <img src="assets/OIP (4).jpg" alt="(4)" class="w-28 h-28 rounded-md hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Frango com catupiry</p>
+                    <p class="text-sm">Frango, catupiry e azeitona.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 36.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Artesanal(4)"
+                            data-price="36.90">
+
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2 ">
+                <img src="assets/OIP (6).jpg" alt="(5)" class="w-28 h-28 rounded-md hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Frango com cheddar</p>
+                    <p class="text-sm">frango, cheddar, axeitona e tomate.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 39.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Artesanal(5)"
+                            data-price="39.90">
+
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2 ">
+                <img src="assets/OIP (7).jpg" alt="(6)" class="w-28 h-28 rounded-md hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Doce</p>
+                    <p class="text-sm">borda de brigadeiro e confete.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 40.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Artesanal(6)"
+                            data-price="40.90">
+
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </main>
+
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl">Bebidas</h2>
+        </div>
+
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+
+            <div class="flex gap-2 w-full ">
+                <img src="assets/refri-1.png" alt="coca-lata" class="w-28 h-28 rounded-md hover:-rotate-2 duration-300">
+                <div class="w-full">
+                    <p class="font-bold">Coca-Cola</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 5.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="coca" data-price="5.90">
+
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="flex gap-2 w-full">
+                <img src="assets/refri-2.png" alt="refri" class="w-28 h-28 rounded-md hover:-rotate-2 duration-300">
+                <div class="w-full">
+                    <p class="font-bold">Guaraná Antarctica</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 5.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="refri" data-price="5.90">
+
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="flex gap-2 w-full">
+                <img src="assets/brahma 1.png" alt="Brahma" class="w-28 h-28 rounded-md hover:-rotate-2 duration-300">
+                <div class="w-full">
+                    <p class="font-bold">Brahma</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 7.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Brahma" data-price="7.90">
+
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="mx-auto max-w-7xl px-2 my-2">
+                <h2 class="font-bold text-3xl">Chocolates</h2>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <div class="flex gap-2 w-full">
+                <img src="assets/diamante.png" alt="Diamante" class="w-28 h-28 rounded-md hover:-rotate-2 duration-300">
+                <div class="w-full">
+                    <p class="font-bold">Diamante-Negro</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 4.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Diamante" data-price="4.90">
+
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="flex gap-2 w-full">
+                <img src="assets/suflair 1.png" alt="Suflair" class="w-28 h-28 rounded-md hover:-rotate-2 duration-300">
+                <div class="w-full">
+                    <p class="font-bold">Suflair</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 4.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Suflair" data-price="4.90">
+
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+        <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99]  items-center justify-center hidden"
+            id="cart-modal">
+            <div class="bg-white p-5 rounded-md min-w-[90%] md: min-w[600px]">
+                <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+                <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+                <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+                <p class="font-bold mt-4">Endereço de entrega:</p>
+                <input type="text" placeholder="Digite seu endereço completo..." id="address"
+                    class="w-full border-2 p-1 rounded my-1">
+                <p class="text-red-500 hidden">Digite seu endereço completo</p>
+
+                <div class="flex items-center justify-between mt-5 w-full">
+                    <button id="close-modal-btn">Fechar</button>
+                    <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar
+                        pedido</button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+            <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+                (<span id="cart-count">0</span>)
+                Veja meu carrinho
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+        </footer>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>
